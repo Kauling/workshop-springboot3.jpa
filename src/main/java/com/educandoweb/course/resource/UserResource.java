@@ -11,6 +11,11 @@ import com.educandoweb.course.entities.User;
 @RequestMapping(value = "/users")
 public class UserResource {
 	
+	
+	/**
+	 * Classe responsável por passar o objeto para o tomcat
+	 * @return
+	 */
 	@GetMapping
 	public ResponseEntity<User> findAll() {
 		User u = new User(1L, "Rodrigo", "Rodrigo@gmail.com", "9999", "1234");
